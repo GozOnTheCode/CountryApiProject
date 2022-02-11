@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Where in the world?</h1>
+    </header>
+
+    <div class="container">
+        <div class="search-div">
+            <input type="text" placeholder="Enter a country" class="countryEntry">
+            <button type="submit" onclick="userAction()" class="search">Search</button>
+        </div>
+    </div>
+
+    <div class="container-result">
+
+        <div class="div-flag">
+            <img alt="" class="flag">
+        </div>
+
+        <div class="result-div">
+            <h1 class="h1-result">Country : <span class="country"></span></h1>
+            <div class="all-result">
+                <div class="other-result-1">
+                    <p class="p-result">Capital : <span class="spanCapital"></span></p>
+                    <p class="p-result">Region : <span class="spanRegions"></span></p>
+                    <p class="p-result">Habitants : <span class="spanHabitant"></span></p>
+                </div>
+                <div class="other-result-2">
+                    <p class="p-result">Languages : <span class="spanLanguages"></span></p>
+                    <p class="p-result">Money Symbol : <span class="spanSymbol"></span><span class="symbol2"></span></p>
+                    <p class="p-result">Republic : <span class="spanRepublic"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-btn">
+        <a class="wiki" target="blank">Wikipedia Page</a>
+        <a class="dev one" href="https://github.com/GozOnTheCode" target="blank">Developer Page</a>
+        <a class="api two" href="https://restcountries.com/" target="blank">API Page</a>
+    </div>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+@font-face {
+    font-family: titleFont;
+    src: url(../font/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: resultFont;
+    src: url(../font/Montserrat-Light.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(33 46 55);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(43 55 67);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 10vh;
+}
+
+.logo {
+    color: white;
+    font-family: titleFont;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.countryEntry {
+    border: none;
+    background-color: rgb(43 55 67);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 50px;
+    padding: 15px 25px;
+    outline: none;
+    color: white;
+    font-family: titleFont;
+}
+
+.countryEntry::placeholder {
+    font-family: titleFont;
+    color: white;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search {
+    border: none;
+    background-color: rgb(43 55 67);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    padding: 15px 15px;
+    font-family: titleFont;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.search:hover {
+    letter-spacing: 1px;
+}
+
+.div-flag {
+    background-color: transparent;
+    width: 400px;
+    height: 35vh;
+    border: solid 1px rgb(88, 100, 112);
+}
+
+.flag {
+    width: 100%;
+    height: 100%;
+}
+
+.h1-result {
+    color: white;
+    font-family: titleFont;
+}
+
+.result-div {
+    margin-left: 80px;
+}
+
+.other-result-2 {
+    margin-left: 180px;
+}
+
+.container-result {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.all-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.p-result {
+    color: white;
+    font-family: resultFont;
+    font-size: 18px;
+    padding: 12px 0px;
+}
+
+.div-btn {
+    margin: 50px 50px;
+}
+
+.div-btn a {
+    padding: 15px 25px;
+    background-color: rgb(43 55 67);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: titleFont;
+    color: white;
+    font-size: 15px;
+    transition: .8s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.div-btn a:hover {
+    letter-spacing: 1px;
+}
+
+.one {
+    margin-left: 20px;
+}
+
+.two {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+    }
+    .container-result {
+        flex-direction: column;
+    }
+    .div-flag {
+        width: 300px;
+    }
+    .search-div input {
+        width: 180px;
+    }
+    .div-btn {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-btn a {
+        width: 220px;
+    }
+    .div-btn .two {
+        margin-left: 0;
+        margin-top: 18%;
+    }
+    .div-btn .one {
+        margin-left: 0;
+        margin-top: 18%;
+    }
+    .all-result {
+       flex-direction: column;
+    }
+    .other-result-2 {
+        margin-left: 0;
+    }
+    .result-div {
+        margin-left: 0;
+        margin-top: 8%;
+    }
+}
